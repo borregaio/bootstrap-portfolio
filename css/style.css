@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: darkgray;
+}
+
+/* Navbar */
+
+
+/* Hero */
+#hero {
+  background-color: red;
+  height: 400px;
+  padding: 70px;
+}
+
+
+/* About Me */
+#about {
+  padding: 50px;
+}
+
+#about .row {
+  background-color: aqua;
+}
+
+#about img {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Skills */
+#skills {
+  margin: 0 50px;
+
+}
+
+#skills .card {
+  border: none;
+  margin: 30px 0;
+}
+
+/* Work */
+#work {
+  padding: 50px;
+}
+
+#work .card {
+  border: none;
+  margin: 30px 0;
+}
+
+/* Contact */
+#contact {
+  margin: 20px 0;
+  background-color: red;
+}
+
+#contact img {
+  width: 60px;
+}
+
+#contact h6 {
+  text-align: center;
+  margin: 20px 0;
+}
