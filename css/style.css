@@ -1,3 +1,5 @@
+/* General Styles */
+
 * {
   box-sizing: border-box;
 }
@@ -26,13 +28,17 @@ h5 {
   font-weight: 700;
 }
 
-button:hover {
-  box-shadow: 10px 5px 5px var(--color1);
+#hero,
+#work,
+#skills,
+#about,
+#footer {
+  padding: 50px;
 }
 
 /* Navbar */
 
-.navbar-custom {
+.navbar {
   background-color: var(--color2);
 }
 
@@ -45,15 +51,9 @@ button:hover {
   border: none;
 }
 
+/* Hero Section */
 
-
-
-/* Hero */
-#hero {
-  padding: 50px;
-}
-
-.flexbox {
+.hero-grid {
   display: flex;
   display: grid;
   grid-template-areas: "title image"
@@ -63,50 +63,41 @@ button:hover {
   padding-top: 50px;
 }
 
-.title {
+.hero-title {
   grid-area: title;
 }
 
-.description {
+.hero-description {
   grid-area: description;
 }
 
-.image {
+.hero-image {
   grid-area: image;
   border-radius: 50%;
   display: block;
   margin: 0 auto;
 }
 
+/* Work Section*/
 
-/* About Me */
-#about {
-  padding: 50px;
+#work .card {
+  border: none;
+  margin: 30px 0;
 }
 
-#about .row {
-  background-color: var(--color3);
-  display: flex;
-  text-align: center;
-  align-items: center;
-  border-radius: 10px;
+#work img {
+  padding: 40px;
 }
 
-#about h3 {
-  color: var(--color1);
+#work h5 {
+  padding-top: 20px;
 }
 
-#about img {
-  display: block;
-  width: 50%;
-  margin: 0 auto;
+.project-button:hover {
+  box-shadow: 10px 5px 5px var(--color1);
 }
 
-/* Skills */
-#skills {
-  margin: 0 50px;
-  padding-top: 50px;
-}
+/* Skills Section*/
 
 #skills .row {
   display: flex;
@@ -119,6 +110,7 @@ button:hover {
   border: none;
   margin: 30px 10px;
   width: 30%;
+  height: 180px;
 }
 
 #skills img {
@@ -128,32 +120,35 @@ button:hover {
 }
 
 #skills h6 {
-  color: black;
+  color: var(--color1);
 }
 
+/* About Section */
 
-/* Work */
-#work {
-  padding: 50px 50px 0 50px;
+#about .row {
+  background-color: var(--color3);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
 }
 
-#work .card {
-  border: none;
-  margin: 30px 0;
+#about h3 {
+  color: var(--color1);
+  padding: 30px;
 }
 
-#work img {
-  padding: 40px;
+#about p {
+  padding: 0 10px;
 }
 
-.work-card {
-  padding-top: 40px;
+#about img {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
 }
 
 /* Footer */
-#footer {
-  margin: 20px 0;
-}
 
 .links {
   display: flex;
@@ -163,7 +158,7 @@ button:hover {
 #footer a {
   text-decoration: none;
   color: var(--color3);
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 #footer a:hover {
@@ -175,38 +170,36 @@ button:hover {
   text-align: center;
 }
 
-
+/* Media queries for mobile phones */
 
 @media only screen and (max-width: 480px) {
 
-  .title {
-    padding-bottom: 20px;
-  }
+  /* Hero Section */
 
-  .description {
-    padding-bottom: 40px;
-  }
-
-  #work img {
-    padding: 20px;
-  }
-
-  .work-card {
-    padding-top: 0;
-  }
-
-  .flexbox {
+  .hero-grid {
     grid-template-areas: "title"
       "description"
       "image";
   }
 
-  #skills .card {
-    width: 100%
+  .hero-title {
+    padding-bottom: 10px;
   }
 
-  #about h3 {
-    padding-top: 30px;
+  .hero-description {
+    padding-bottom: 40px;
+  }
+
+  /* Work Section */
+
+  #work img {
+    padding: 20px;
+  }
+
+  /* Skills Section */
+
+  #skills .card {
+    width: 100%
   }
 
 }

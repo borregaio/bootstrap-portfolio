@@ -11,9 +11,8 @@
 </head>
 
 <body>
-
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Carlos Borrega</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -41,16 +40,14 @@
             </div>
         </div>
     </nav>
-
     <!-- Hero Section -->
     <section id="hero">
-        <div class="flexbox">
-            <h1 class="title">Welcome to my portfolio!</h1>
-            <h3 class="description">I'm a Front-End Web Development<br>Bootcamp Student</h3>
-            <img class="image" src="./images/sprite.jpg" alt="">
+        <div class="hero-grid">
+            <h1 class="hero-title">Welcome to my portfolio!</h1>
+            <h3 class="hero-description">I'm a Front-End Web Development<br>Bootcamp Student</h3>
+            <img class="hero-image" src="./images/sprite.jpg" alt="Profile sprite">
         </div>
     </section>
-
     <!-- Work Section-->
     <section id="work">
         <h3>My Work</h3>
@@ -59,10 +56,10 @@
                 <div class="card mb-3">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="./images/project.jpg" class="img-fluid rounded-start" alt="...">
+                            <img src="./images/project.jpg" class="img-fluid rounded-start" alt="Project image">
                         </div>
                         <div class="col-md-8">
-                            <div class="card-body work-card">
+                            <div class="card-body">
                                 <h5 class="card-title">Portfolio</h5>
                                 <p class="card-text">This is my first project.</p>
                                 <p class="card-text">I used HTML, CSS and Bootstrap to achieve
@@ -81,10 +78,10 @@
                             <img src="./images/project.jpg" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
-                            <div class="card-body work-card">
+                            <div class="card-body">
                                 <h5 class="card-title">Next Project</h5>
                                 <p class="card-text">Coming Soon...</p>
-                                <button type="button" class="btn btn-primary">Coming Soon</button>
+                                <button type="button" class="btn btn-primary project-button">Coming Soon</button>
                             </div>
                         </div>
                     </div>
@@ -95,10 +92,10 @@
                             <img src="./images/project.jpg" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
-                            <div class="card-body work-card">
+                            <div class="card-body">
                                 <h5 class="card-title">Next Project</h5>
                                 <p class="card-text">Coming Soon...</p>
-                                <button type="button" class="btn btn-primary">Coming Soon</button>
+                                <button type="button" class="btn btn-primary project-button">Coming Soon</button>
                             </div>
                         </div>
                     </div>
@@ -106,11 +103,10 @@
             </div>
         </div>
     </section>
-
     <!-- Skills Section -->
     <section id="skills">
         <h3>My Skills</h3>
-        <div class="container-fluid skills">
+        <div class="container-fluid">
             <div class="row">
                 <div class="card col-sm-12 col-md-4 col-lg-4">
                     <img src="./images/html.svg" class="card-img-top" alt="HTML">
@@ -133,7 +129,6 @@
             </div>
         </div>
     </section>
-
     <!-- About Section -->
     <section id="about">
         <div class="container-fluid">
@@ -152,7 +147,6 @@
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer id="footer">
         <div class="links">
@@ -162,8 +156,6 @@
         </div>
         <h6>© Carlos Borrega</h6>
     </footer>
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
