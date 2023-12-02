@@ -110,7 +110,7 @@ h5 {
   border: none;
   margin: 30px 10px;
   width: 30%;
-  height: 180px;
+  height: 220px;
 }
 
 #skills img {
@@ -199,7 +199,8 @@ h5 {
   /* Skills Section */
 
   #skills .card {
-    width: 100%
+    width: 100%;
+    height: 180px;
   }
 
 }
