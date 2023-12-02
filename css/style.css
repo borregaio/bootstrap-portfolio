@@ -2,26 +2,45 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color1: #4A06E7;
+  --color2: #D601D5;
+  --color3: #FEFE04;
+  --color4: #6ED801;
+  --color5: #E9E9E9;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: darkgray;
+  background-color: var(--color1);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 h1, h3, h6 {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: blue;
-
+  color: var(--color5);
 }
 
 /* Navbar */
 
+.navbar-custom {
+  background-color: var(--color4);
+}
+
+.navbar-brand, .nav-link {
+  color: var(--color1) !important;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+
+
 
 /* Hero */
 #hero {
-  /* background-color: red; */
-  height: 400px;
   padding: 50px;
 }
 
@@ -31,6 +50,7 @@ h1, h3, h6 {
   grid-template-areas: "title image"
   "description image";
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .title {
@@ -44,6 +64,8 @@ h1, h3, h6 {
 .image {
   grid-area: image;
   border-radius: 50%;
+  display: block;
+  margin: 0 auto;
 }
 
 
@@ -65,13 +87,31 @@ h1, h3, h6 {
 /* Skills */
 #skills {
   margin: 0 50px;
+}
 
+#skills .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #skills .card {
   border: none;
-  margin: 30px 0;
+  margin: 30px 10px;
+  width: 30%;
 }
+
+#skills img {
+  width: 30%;
+  display: block;
+  margin: 20px auto;
+}
+
+#skills h6 {
+  color: black;
+}
+
 
 /* Work */
 #work {
@@ -86,7 +126,6 @@ h1, h3, h6 {
 /* Contact */
 #contact {
   margin: 20px 0;
-  background-color: red;
 }
 
 /* #contact img {
@@ -95,4 +134,21 @@ h1, h3, h6 {
 #contact h6 {
   text-align: center;
   margin: 20px 0;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+ 
+
+  .flexbox {
+    grid-template-areas: "title"
+    "description"
+    "image";
+  }
+
+  #skills .card {
+    width: auto;
+  }
+
 }
