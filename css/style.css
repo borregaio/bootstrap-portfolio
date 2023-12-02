@@ -24,6 +24,10 @@ h5 {
   font-weight: 700;
 }
 
+button:hover {
+  box-shadow: 10px 5px 5px var(--color1);
+}
+
 /* Navbar */
 
 .navbar-custom {
@@ -76,15 +80,12 @@ h5 {
   padding: 50px;
 }
 
-.about-me {
-  border-radius: 25px;
-}
-
 #about .row {
   background-color: var(--color5);
   display: flex;
 text-align: center;
   align-items: center;
+  border-radius: 10px;
 }
 
 #about h3 {
@@ -100,6 +101,7 @@ text-align: center;
 /* Skills */
 #skills {
   margin: 0 50px;
+  padding-top: 50px;
 }
 
 #skills .row {
@@ -128,7 +130,7 @@ text-align: center;
 
 /* Work */
 #work {
-  padding: 0 50px;
+  padding: 50px 50px 0 50px;
 }
 
 #work .card {
@@ -149,18 +151,44 @@ text-align: center;
   margin: 20px 0;
 }
 
-/* #contact img {
-  width: 60px;
-} */
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+#contact a {
+  text-decoration: none;
+  color: var(--color5);
+  margin: 0 10px;
+}
+
+#contact a:hover{
+  color: var(--color4);
+}
 #contact h6 {
-  text-align: center;
   margin: 20px 0;
+  text-align: center;
 }
 
 
 
 @media only screen and (max-width: 480px) {
+
+  .title {
+    padding-bottom: 20px;
+  }
+
+  .description {
+    padding-bottom: 40px;
+  }
  
+#work img {
+  padding: 20px;
+}
+
+.work-card {
+  padding-top: 0;
+}
 
   .flexbox {
     grid-template-areas: "title"
@@ -169,7 +197,11 @@ text-align: center;
   }
 
   #skills .card {
-    width: auto;
+    width: 100%
+  }
+
+  #about h3 {
+    padding-top: 30px;
   }
 
 }
