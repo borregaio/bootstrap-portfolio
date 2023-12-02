@@ -3,11 +3,9 @@
 }
 
 :root {
-  --color1: #4A06E7;
-  --color2: #D601D5;
-  --color3: #FEFE04;
-  --color4: #6ED801;
-  --color5: #E9E9E9;
+  --color1: #000000;
+  --color4: #6EDA00;
+  --color5: #FFFFFF;
 }
 
 body {
@@ -20,6 +18,10 @@ body {
 h1, h3, h6 {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: var(--color5);
+}
+
+h5 {
+  font-weight: 700;
 }
 
 /* Navbar */
@@ -74,8 +76,19 @@ h1, h3, h6 {
   padding: 50px;
 }
 
+.about-me {
+  border-radius: 25px;
+}
+
 #about .row {
-  background-color: aqua;
+  background-color: var(--color5);
+  display: flex;
+text-align: center;
+  align-items: center;
+}
+
+#about h3 {
+  color: var(--color1);
 }
 
 #about img {
@@ -121,6 +134,14 @@ h1, h3, h6 {
 #work .card {
   border: none;
   margin: 30px 0;
+}
+
+#work img {
+  padding: 40px;
+}
+
+.work-card {
+  padding-top: 40px;
 }
 
 /* Contact */
