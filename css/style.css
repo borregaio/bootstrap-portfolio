@@ -4,8 +4,8 @@
 
 :root {
   --color1: #000000;
-  --color4: #6EDA00;
-  --color5: #FFFFFF;
+  --color2: #6EDA00;
+  --color3: #FFFFFF;
 }
 
 body {
@@ -15,9 +15,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1, h3, h6 {
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: var(--color5);
+h1,
+h3,
+h6 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: var(--color3);
 }
 
 h5 {
@@ -31,10 +33,11 @@ button:hover {
 /* Navbar */
 
 .navbar-custom {
-  background-color: var(--color4);
+  background-color: var(--color2);
 }
 
-.navbar-brand, .nav-link {
+.navbar-brand,
+.nav-link {
   color: var(--color1) !important;
 }
 
@@ -54,9 +57,10 @@ button:hover {
   display: flex;
   display: grid;
   grid-template-areas: "title image"
-  "description image";
+    "description image";
   align-items: center;
   justify-content: space-evenly;
+  padding-top: 50px;
 }
 
 .title {
@@ -81,9 +85,9 @@ button:hover {
 }
 
 #about .row {
-  background-color: var(--color5);
+  background-color: var(--color3);
   display: flex;
-text-align: center;
+  text-align: center;
   align-items: center;
   border-radius: 10px;
 }
@@ -146,8 +150,8 @@ text-align: center;
   padding-top: 40px;
 }
 
-/* Contact */
-#contact {
+/* Footer */
+#footer {
   margin: 20px 0;
 }
 
@@ -156,16 +160,17 @@ text-align: center;
   justify-content: center;
 }
 
-#contact a {
+#footer a {
   text-decoration: none;
-  color: var(--color5);
+  color: var(--color3);
   margin: 0 10px;
 }
 
-#contact a:hover{
-  color: var(--color4);
+#footer a:hover {
+  color: var(--color2);
 }
-#contact h6 {
+
+#footer h6 {
   margin: 20px 0;
   text-align: center;
 }
@@ -181,19 +186,19 @@ text-align: center;
   .description {
     padding-bottom: 40px;
   }
- 
-#work img {
-  padding: 20px;
-}
 
-.work-card {
-  padding-top: 0;
-}
+  #work img {
+    padding: 20px;
+  }
+
+  .work-card {
+    padding-top: 0;
+  }
 
   .flexbox {
     grid-template-areas: "title"
-    "description"
-    "image";
+      "description"
+      "image";
   }
 
   #skills .card {
