@@ -91,7 +91,7 @@ code .
    - The work section displays my projects in a grid format using Bootstrap cards. Each card provides a concise overview of the respective project.
 
       ```html
-                     <div class="card mb-3">
+                  <div class="card mb-3">
                      <div class="row g-0">
                            <div class="col-md-4">
                               <img src="./images/project.jpg" class="img-fluid rounded-start" alt="Project image">
